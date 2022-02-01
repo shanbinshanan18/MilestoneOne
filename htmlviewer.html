@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <!-- Internal CSS styles -->
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      main {
+        margin: 10px;
+      }
+
+      /* navigation bar /menu styles */
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-self: start;
+        align-items: center;
+        padding: 0;
+        overflow: hidden;
+        background-color: #000;
+      }
+
+      /* menu items styles */
+      nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* menu items mouse hover state style */
+      nav li a:hover {
+        background-color: rgb(246, 240, 240);
+        color: #000;
+        text-decoration: none;
+      }
+
+      img {
+        /* floating image to left */
+        float: left;
+        margin: 0 10px;
+      }
+
+      /* clear float */
+      .clear {
+        clear: both;
+      }
+
+      /* link styles */
+      a {
+        text-decoration: none;
+        color: blue;
+        cursor: pointer;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        color: #000;
+      }
+
+      footer {
+        background-color: #000;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- navigation / menu section  -->
+      <nav>
+        <!-- menu/ unordered list -->
+        <ul>
+          <!-- list item / menu links -->
+          <li>
+            <a href="#section_one">Go to Section one </a>
+          </li>
+          <li>
+            <a href="#section_two">Go to Section two </a>
+          </li>
+          <li>
+            <a href="#section_three">Go to Section three </a>
+          </li>
+          <li>
+            <a href="#section_four">Go to Section four </a>
+          </li>
+          <li>
+            <a href="#section_five">Go to Section five </a>
+          </li>
+          <li>
+            <a href="#section_six">Go to Section six </a>
+          </li>
+          <li>
+            <a href="#section_seven">Go to Section seven </a>
+          </li>
+          <li>
+            <a href="#section_eight">Go to Section eight </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>My Personal Profile</h1>
+      <!-- First section -->
+      <div id="section_one">
+        <!-- h2 heading -->
+        <h2>Basic Profile Information</h2>
+        <h3>Shanbin Shanan: <span>Computer Science</span> Major </h3>
+        <!-- image -->
+        <img src=height="100" width="100">
+        <!--paragraph text  -->
+        <p>
+          <strong> About Me:</strong>
+        </p>I am currently a senior, majoring in Computer Science. My goal is to successfully graduate with a B.S. in Computer Science, and aquire a Software Engineering position.
+        <!-- clear float set for image  -->
+        <div class="clear"></div>
+      </div>
+      <!-- Second section -->
+      <div id="section_two">
+        <h2>Education Summary Section</h2>
+        <h3>About My Education:</h3>
+        <p>As mentioned previously, I am a senior, majoring in Computer Science. I have an associates degree in Computer Science and pursuing my bachelors. </p>
+        <!-- Third section -->
+        <div id="section_three">
+          <h2>Work Experience/Internships Section</h2>
+          <h3>About My Work Experience:</h3>
+          <!-- unordered (Bulleted) list -->
+          <ul>
+            <!-- list items -->
+            <li>CodePath Cyber Security</li>
+            <li>CodePath iOS Development</li>
+            <li>NYU Bazaar (Project)</li>
+            <li>Flix (Project)</li>
+            <li>Inventory Managment System (Project)</li>
+          </ul>
+        </div>
+        <!-- Fourth section -->
+        <div id="section_four">
+          <h2>Programming Skills Section</h2>
+          <h3>Summary of Programming Skills:</h3>
+          <!-- ordered (i Numbered) list -->
+          <ol type="i">
+            <!-- list items -->
+            <li>JavaScript - Intermediate </li>
+            <li>Eclipse - Intermediate </li>
+            <li>Microsoft Excel - Intermediate </li>
+            <li>Python - Beginner </li>
+            <li>SQL - Beginner </li>
+          </ol>
+        </div>
+        <!-- Fifth section -->
+        <div id="section_five">
+          <h2>General Interests Section</h2>
+          <h3>About My General Interests & Hobbies:</h3>
+          <!-- ordered ("a" Numbered) list -->
+          <ol type="a">
+            <!-- list items -->
+            <li>Basketball</li>
+            <li>Football</li>
+            <li>Fantasty Sports</li>
+            <li>Travelling</li>
+            <li>Eating</li>
+          </ol>
+        </div>
+        <!-- Sixth section -->
+        <div id="section_six">
+          <h2>My Favorite Song, Film, and TV Show Section</h2>
+          <p>Favorite Song: Pop Smoke - For The Night ft. Lil Baby, DaBaby </p>
+          <video width="320" height="240" autoplay controls>
+            <source src=movie.mp4 type="video/mp4">
+          </video>
+          <br>
+          <p>Favorite Movie: Spiderman </p>
+          <video width="320" height="240" autoplay controls>
+            <source src="movie.mp4" type="video/mp4">
+          </video>
+          <br>
+          <p>Favorite TV Show: Clickbait </p>
+          <video width="320" height="240" autoplay controls>
+            <source src="movie.mp4" type="video/mp4">
+          </video>
+          <br>
+        </div>
+        <!-- Seventh  section -->
+        <div id="section_seven">
+          <h2>Favorite Website Section</h2>
+          <h3>About My Favorite Website:</h3>
+          <p>1. YouTube - This website is designed for videos that are posted by influencers and vloggers. </p>
+          <!-- link below, target="_blank" opens link in new browser tab -->
+          <a href=https://www.youtube.com target="_blank">YouTube</a>
+          <br>
+          <p>2. Instagram - This website is designed for posts by it's users. Note: An account is required to actually view the posts. </p>
+          <!-- link below, target="_blank" opens link in new browser tab -->
+          <a href=https://www.instagram.com target="_blank">Instagram</a>
+        </div>
+        <!-- Eighth  section -->
+        <div id="section_eight">
+          <h2>My Projects in this Course </h2>
+          <!-- form -->
+          <form action="">
+            <!-- table -->
+            <table>
+              <!-- row -->
+              <tr>
+                <!-- header cells -->
+                <th>Index</th>
+                <th>Project</th>
+                <th>Progress</th>
+              </tr>
+              <tr>
+                <!-- data cells -->
+                <td>1</td>
+                <td>
+                  <a href=https://github.com/shanbinshanan18/MilestoneOne.git target="_blank">MilestoneOne</a>
+                <td>
+                  <input type="text" name="" id="">
+              </tr>
+            </table>
+          </form>
+        </div>
+        <!-- footer -->
+        <footer>
+          <p>Copyrights &copy; reserved to me</p>
